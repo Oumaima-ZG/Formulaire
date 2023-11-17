@@ -1,0 +1,88 @@
+   /* Styles pour le corps de la page */
+   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Style pour le grand titre en arrière-plan */
+.background-title {
+    padding: 20px;
+    text-align: center;
+    background-color: #911b2f;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styles pour le conteneur principal */
+.main-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000000;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 60px auto 20px auto; /* Ajout de marges en haut et en bas */
+    flex: 1; /* Permet au contenu de prendre l'espace restant */
+}
+
+/* Style pour la colonne du formulaire */
+.form-container {
+    width: 48%;
+}
+
+/* Style pour la colonne de l'image */
+.image-container {
+    width: 48%;
+}
+
+/* Styles pour les champs du formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style pour l'option "Se souvenir de moi" */
+.remember-me {
+    margin-top: 10px;
+}
+
+/* Styles pour les boutons de connexion sociale */
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+}
+
+.social-buttons a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-buttons button,
+.social-buttons a {
+    margin-right: 10px;
+}
+
+/* Style pour l'image avec largeur maximale et hauteur automatique */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+/* Style pour le footer */
+.footer {
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Place le footer en bas de la page */
+}
+
+/* Style pour le logo dans le footer */
+.footer img {
+    max-width: 100px;
+}

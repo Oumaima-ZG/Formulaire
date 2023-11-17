@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Méta-informations pour le rendu correct et l'adaptabilité -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre de la page -->
+    <title>Formulaire d'Inscription</title>
+
+    <!-- Intégration de la feuille de style Bootstrap pour la mise en forme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Intégration de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Intégration de Material Icons pour les icônes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Script Javascript -->
+    <link rel="stylesheet" href="script.js">
+    
+</head>
+
+<body>
+
+    <!-- Grand titre en arrière-plan -->
+    <div class="background-title">
+        Formulaire D'Inscription Futur Digital
+    </div>
+
+    <!-- Conteneur principal avec disposition flex pour l'alignement vertical au centre -->
+    <div class="main-container">
+        <!-- Colonne du formulaire -->
+        <div class="form-container">
+            <!-- Formulaire d'inscription avec identifiant 'registrationForm' et validation JavaScript -->
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <!-- Champ pour le nom -->
+                <div class="form-group">
+                    <h4>
+                        <i class="fas fa-user-plus"></i> <!-- Icône d'inscription -->
+                        Inscrivez-vous
+                    </h4>
+                    <input type="text" class="form-control" id="inputNom" placeholder="Nom Complet" required>
+                </div>
+                <!-- Champ pour l'adresse e-mail -->
+                <div class="form-group">
+                    <input type="email" class="form-control" id="inputMail" placeholder="Adresse mail" required>
+                </div>
+                <!-- Champ pour le mot de passe -->
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Mot de passe" required>
+                </div>
+                <!-- Champ pour la confirmation du mot de passe -->
+                <div class="form-group">
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmer mot de passe"
+                        required>
+                </div>
+
+                <!-- Option pour se souvenir de l'utilisateur avec bouton de soumission du formulaire -->
+                <div class="form-check remember-me">
+                    <input type="checkbox" class="form-check-input" id="rememberMe" required>
+                    <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
+                    <button type="button" class="btn btn-primary" onclick="inscription()">S'inscrire</button>
+                </div>
+
+                <!-- Boutons de connexion sociale avec Facebook et Google -->
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com" class="btn btn-outline-primary">
+                        <i class="fab fa-facebook-f"></i> S'inscrire avec Facebook
+                    </a>
+                </div>
+                <div class="social-buttons">
+                    <a href="https://accounts.google.com" class="btn btn-outline-danger">
+                        <i class="fab fa-google"></i> S'inscrire avec Google
+                    </a>
+                </div>
+            </form>
+        </div>
+        <!-- Colonne de l'image -->
+        <div class="image-container">
+            <!-- Image pour illustration -->
+            <img src="image.png" alt="Image">
+        </div>
+    </div>
+
+    <!-- Footer avec logo -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Logo pour le footer -->
+            <img src="logo.png" alt="Logo de l'entreprise">
+        </div>
+    </footer>
+
+    
+
+    <!-- Intégration des bibliothèques externes -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
